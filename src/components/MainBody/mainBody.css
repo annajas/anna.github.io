@@ -1,0 +1,31 @@
+.firstBody {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFFAF1, #F4F0DB);
+    z-index: -2;
+}
+
+/* .secondBody {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #F4F0DB, #ECD9BA);
+    z-index: -2;
+} */
+
+
+
+
+
+.secondBody {
+    width: 70%;
+    overflow-x: hidden;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.829);
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 7.5%;
+    z-index: 1;
+}

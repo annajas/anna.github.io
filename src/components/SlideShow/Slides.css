@@ -1,0 +1,154 @@
+/* .slide-container {
+    width: 100%;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.829);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 7.5%;
+    z-index: -1;
+} */
+
+.main-img {
+    max-width: 100%;
+    position: relative;
+    max-height: 95%;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.slide-photos::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.slide-photos {
+    position: relative;
+}
+
+.slide-container {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(to bottom, #F4F0DB, #ECD9BA);
+    display: flex;
+}
+
+.slide-container-child {
+    position: relative;
+    width: 66vw;
+    height: 100vh;
+    background: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left {
+    position: relative;
+    height: 100%;
+    color: blanchedalmond;
+    transition: 150ms transform ease-out;
+    margin: 0% 2% 0% 2%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#left:hover {
+    transition: 200ms transform ease-in;
+    background-blend-mode: luminosity;
+    transform: scale(1.2);
+}
+
+#left:active {
+    transition: 50ms transform ease-out;
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: 4%;
+    width: 20vw;
+    height: 80%;
+    text-align: center;
+}
+
+.img-info {
+    display: inline-block;
+    height: fit-content;
+    vertical-align: middle;
+    color: blanchedalmond;
+    background: rgba(0, 0, 0, 0.829);
+    box-shadow: 4px 4px 3px rgba(70, 70, 70, 0.664);
+    cursor: pointer;
+    padding: 1%;
+    font-size: 3vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: transform 200ms;
+}
+
+.img-info:hover {
+    transition: transform 350ms;
+    transform: translatey(5%);
+}
+
+.my-slide-enter {
+    transform: translateY(-120%);
+    z-index: 100;
+}
+
+.my-slide-enter-active {
+    transform: translateY(0);
+    z-index: 100;
+    transition: transform 600ms;
+}
+
+.my-slide-exit {
+    
+    z-index: 100;
+}
+
+.my-slide-exit-active {
+    transform: translateY(120%);
+    z-index: 100;
+    transition: transform 400ms ease-in;
+}
+
+.my-info-enter {
+    opacity: 0;
+}
+
+.my-info-enter-active {
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+.my-info-exit {
+    opacity: 1;
+
+}
+
+.my-info-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .info {
+        display: none;
+    }
+}

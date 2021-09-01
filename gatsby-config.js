@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "anna-website",
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-netlify-cms`
+  ],
 };

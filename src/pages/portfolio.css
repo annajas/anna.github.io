@@ -1,0 +1,33 @@
+.portfolioBody {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #FFFAF1, #F4F0DB, #faf8f5);
+}
+
+.portfolio-container {
+    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    row-gap: 5vh;
+}
+
+.portfolio-container > div {
+    height: 100%;
+}
+
+
+.portfolio-container > div > img {
+    max-width: 30vw;
+    transition: transform 300ms;
+}
+
+.portfolio-container > div > img:hover {
+    transition: transform 500ms;
+    transform: scale(1.1);
+}
+
+.portfolio-container > div > img:active {
+    transition: transform 1000ms;
+    transform: scale(0);
+}

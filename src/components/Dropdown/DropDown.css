@@ -1,0 +1,39 @@
+
+.drop-down-menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: blanchedalmond;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.ddOptions {
+    cursor: pointer;
+    transition: font-size 200ms, color 200ms;
+}
+
+.ddOptions:active {
+    transition: font-size 200ms, color 200ms;
+    font-size: 2.6rem;
+    color: rgb(255, 212, 148);
+}
+
+
+@media screen and (min-width: 950px) {
+    .drop-down-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .drop-down-menu{
+        width: 100%;
+        top: 20%;
+        position: fixed;
+        z-index: 1000;
+        height: 60vh;
+        background: rgba(0, 0, 0, 0.842);
+    }
+
+}

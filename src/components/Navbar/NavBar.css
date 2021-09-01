@@ -1,0 +1,132 @@
+.navbar {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    background: linear-gradient(to top, #FFFAF1, rgb(243, 243, 243));
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+
+.name, .tabs-container {
+    height: auto;
+    width: 50%;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.name h1 {
+    width: 100%;
+    height: 50%;
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 8vmin;
+    margin-left: 3%;
+    margin: 0px;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: 500ms color;
+}
+
+#firstName:hover, #secondName:hover {
+    transition: 500ms color;
+    color: #DEC19B;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tabs {
+    justify-content: space-evenly;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    height: 50%;
+  
+}
+
+AnchorLink {
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+}
+
+#about, #portfolio, #contact {
+    height: 50% !important;
+    width: 20% !important;
+    text-align: center;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1% !important;
+    font-size: 3vmin;
+    transition: 700ms color, 700ms background-color, 700ms box-shadow;
+}
+
+
+.moonIcon {
+    transition: 3000ms color;
+}
+
+.moonIcon:hover {
+    transition: 500ms color;
+    color: #DEC19B;
+}
+
+#about:hover, #portfolio:hover, #contact:hover {
+    transition: 400ms color, 600ms background-color, 400ms box-shadow;
+    color: blanchedalmond !important;
+    background-color: black;
+    box-shadow: 4px 4px 3px rgba(70, 70, 70, 0.664);
+}
+
+.drop-down {
+    display: none;
+
+}
+
+
+
+@media screen and (min-width: 950px) {
+    .drop-down-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #about, #portfolio, #contact {
+        display: none;
+    }
+
+    .drop-down-menu{
+        width: 100%;
+        top: 25%;
+        position: fixed;
+        z-index: 1000;
+        height: 50vh;
+        background: black;
+    }
+
+    .drop-down {
+        display: block;
+        position: absolute;
+        right: 5%;
+        font-size: 1.5rem;
+        transition: transform 200ms;
+    }
+
+
+    .drop-down:hover {
+        transition: transform 200ms;
+        transform: scale(1.1);
+    }
+
+}

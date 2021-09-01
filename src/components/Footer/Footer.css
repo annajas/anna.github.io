@@ -1,0 +1,23 @@
+.footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6vh;
+    width: auto;
+    background: linear-gradient(to bottom, #ececec, #FFFFFF);
+    z-index: 100;
+    font-size: 0.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-top: 1px solid rgba(53, 53, 53, 0.281);
+    position: relative;
+}
+
+
+
+.footer::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
