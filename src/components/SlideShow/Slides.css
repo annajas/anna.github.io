@@ -144,11 +144,3 @@
     opacity: 0;
     transition: opacity 400ms;
 }
-
-
-
-@media screen and (max-width: 750px) {
-    .info {
-        display: none;
-    }
-}

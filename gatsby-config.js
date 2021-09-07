@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "anna-website",
+    title: "Anna Jasinska",
+    titleTemplate: "%s Art | Design",
+    description: "Architect, Designer, and Photographer",
+    url: "https://www.doe.com", // No trailing slash allowed!
   },
   plugins: [
     `gatsby-plugin-anchor-links`,
-    `gatsby-plugin-netlify-cms`
+    // `gatsby-plugin-netlify-cms`
   ],
 };
