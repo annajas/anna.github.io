@@ -7,6 +7,7 @@ import '../components/Dropdown/DropDown.css';
 import './portfolio.css';
 import LightBox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import SEO from '../Seo';
 import pImgs from '../components/SlideShow/ssImages/pImg.js';
 
 
@@ -36,6 +37,10 @@ const Portfolio = () => {
 
     return (
         <Layout>
+            <SEO 
+                title='Portfolio'
+                description='My Portfolio'
+            />
             {drop && <DropDown drop={drop} toggleDrop={toggleDrop}/>}
             <NavBar drop={drop} toggleDrop={toggleDrop}/>
             <div className="portfolioBody">

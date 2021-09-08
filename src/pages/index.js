@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 import DropDown from '../components/Dropdown/DropDown.js';
 import '../components/Dropdown/DropDown.css';
 import Contact from "../components/Contact/Contact";
+import SEO from '../Seo';
 
 // markup
 const HomePage = () => {
@@ -28,8 +29,12 @@ const HomePage = () => {
 
   return (
     <Layout>
+      <SEO 
+        title='Home'
+        description='Homepage'
+        />
       {drop && <DropDown drop={drop} toggleDrop={toggleDrop}/>}
-      <NavBar drop={drop} toggleDrop = {toggleDrop}/>
+      <NavBar drop={drop} toggleDrop={toggleDrop} />
       <About />
       <MainBody name='secondBody' />
       <Slides />
