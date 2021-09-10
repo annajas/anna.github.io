@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "",
   siteMetadata: {
     title: "Anna Jasinska",
     description: "Architect, Designer, and Photographer",
@@ -7,6 +8,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-anchor-links`,
-    `gatsby-plugin-netlify-cms`
+    // `gatsby-plugin-netlify-cms`
   ],
 };
